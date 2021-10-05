@@ -1,16 +1,17 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Grace
+subtitle: Support Engineer
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am currently a Support Engineer for Centrify, this blog is more to document some of the technologies I am learning and technologies I am passionate about. I enjoy learning, and this blog will be used as a journal for my learning.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+###Media / Contact Information
+
+- Email: grace.luganda.kamya@gmail.com
+- [Github](https://github.com/gracelugandakamya/)
+- [LinkedIn](https://www.linkedin.com/in/grace-luganda/)
 
 What else do you need?
 
-### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
