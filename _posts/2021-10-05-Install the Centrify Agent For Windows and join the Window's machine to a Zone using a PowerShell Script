@@ -1,18 +1,19 @@
-This blog post show cases remote installation and configuration of software using a single PowerShell script and leveraging the WSManCredSSP to get past the second hop in PowerShell remoting. The post below focuses on installing proprietary software, but the fundermental PowerShell concepts can be used to install any other software/packages onto Windows machines that are joined to an active directory domain.
+#This blog post show cases remote installation and configuration of software using a single PowerShell script and leveraging the WSManCredSSP to get past the second hop in PowerShell remoting. The post below focuses on installing proprietary software, but the fundermental PowerShell concepts can be used to install any other software/packages onto Windows machines that are joined to an active directory domain.
 
 Intended Objective for this blog post is to use a single PowerShell script to install the Privileged Elevation agent for Windows and also join the Windows systems to a Centrify zone.
 
-Requirements:
-- Windows machines that are joined to the Active Directory Domain
-- The download for the Centrify Privileged Elevation agent(This can be downloaded from the Centrify download center) 
+#Requirements:
+* Windows machines that are joined to the Active Directory Domain
+* The download for the Centrify Privileged Elevation agent(This can be downloaded from the Centrify download center) 
 
-Explanation of what the script is doing:
+#Explanation of what the script is doing:
 Variables used in the script
+```
 $source = "C:\Windows\Temp\Centrify Agent for Windows64.exe" This is the location of the downloaded Centrify agent for Windows, in my case this is where the agent is stored on my machine
 $computers = Get-content '\\visa2.ocean.net\C$\Windows\Temp\targetmachines2.txt' This is the list of remote machines that I want the Centrify agent for Windows to be installed on.
 $destination = "C$\Windows\Temp\" This is where the Centrify Windows agent will be temporarily copied to the remote Windows machines.
 $credential = Get-Credential -Credential OCEAN\langley This gets the credentials that will be used in the PowerShell script to perfrom the needed actions on those remote machines.
-
+```
 Once our variables are declared, we proceed with the rest of the steps:
 
 #This step enables the Enable-WSManCredSSP on the local machine.
