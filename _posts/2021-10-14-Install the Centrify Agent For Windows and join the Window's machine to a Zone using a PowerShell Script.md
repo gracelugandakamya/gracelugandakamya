@@ -9,7 +9,7 @@ title: Install the Centrify Agent For Windows and join the Windows machine to a 
 
 Intended Objective for this blog post is to use a single PowerShell script to install the Privileged Elevation agent for Windows and also join the Windows systems to a Centrify zone.
 
-Full script is [here] (https://github.com/gracelugandakamya/this-worked-for-me/blob/main/InstallWindowsAgentAndjoinmachinetoaCentrifyZone-github-version.ps1)
+[Full script is here](https://github.com/gracelugandakamya/this-worked-for-me/blob/main/InstallWindowsAgentAndjoinmachinetoaCentrifyZone-github-version.ps1)
 
 **Requirements:**
 * Windows machines that are joined to the Active Directory Domain
