@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install the Centrify Agent For Windows and join the Window's machine to a Zone using a PowerShell Script
-cover-img: /assets/img/powershell-logo.jpg
+title: Install the Centrify Agent For Windows and join the Windows machine to a Zone using a single PowerShell Script
+
 
 #tags: [books, test]
 ---
@@ -78,7 +78,7 @@ This step creates a new PSSession so that the dzjoin can be run on the remote ta
 
 
 This is to run the dzjoin command on the target remote machines so the machines can join the Centrify zone in active directory.
-```Invoke-Command -Session $session2  -ScriptBlock {dzjoin /r yes /z Windows} -Verbose 
+```Invoke-Command -Session $session2  -ScriptBlock {dzjoin /r yes /z ZoneName} -Verbose 
 }```
 
 
