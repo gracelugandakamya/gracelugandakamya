@@ -41,8 +41,7 @@ The command below pulls all the variables above and performs the file copy onto 
 
 **Once the installer executable is copied, proceed to install it silently, the command below installs it silenty on the remote machines**
 
-```Invoke-Command -ComputerName $computers -ScriptBlock {Start-Process 'C:\Windows\Temp\Centrify Agent for Windows64.exe' -ArgumentList "q" -Wait} -Verbose
-}```
+```Invoke-Command -ComputerName $computers -ScriptBlock {Start-Process 'C:\Windows\Temp\Centrify Agent for Windows64.exe' -ArgumentList "q" -Wait} -Verbose}```
 
 
 After the agent is installed clean up the agent package off of the remote machines
