@@ -14,7 +14,7 @@ author: Grace Luganda Kamya
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-#  About Me: "aboutme"
+  About Me: "aboutme"
  # Resources:
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
@@ -42,12 +42,12 @@ social-network-links:
   email: "grace.luganda.kamya@gmail.com"
   #facebook: deanattali
   github: gracelugandakamya
-#  twitter: daattali
+  twitter: @grace_l_kamya
 #  patreon: DeanAttali
 #  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: www.linkedin.com/in/grace-luganda
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -72,7 +72,7 @@ rss-description: This website is a virtual proof that I'm awesome
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  #facebook: true
   linkedin: true
   vk: false
 
