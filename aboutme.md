@@ -11,9 +11,9 @@ Disclaimers:
 2. The views and opinions expressed in this blog are mine and only mine they do not reflect the views of Centrify Corporation. 
 3. All trademarks, trade names, product names and logos appearing on this blog are property of their respective owners.
 
-###Media / Contact Information
+### Media / Contact Information
 
-- Email: grace.luganda.kamya@gmail.com
+- [Email: grace.luganda.kamya@gmail.com](mailto:grace.luganda.kamya@gmail.com)
 - [Github](https://github.com/gracelugandakamya/)
 - [LinkedIn](https://www.linkedin.com/in/grace-luganda/)
 
