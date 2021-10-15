@@ -12,6 +12,6 @@ I am currently a Support Engineer for Centrify, this blog is more to document so
 - [Github](https://github.com/gracelugandakamya/)
 - [LinkedIn](https://www.linkedin.com/in/grace-luganda/)
 
-What else do you need?
+
 
 
