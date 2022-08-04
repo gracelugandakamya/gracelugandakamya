@@ -29,7 +29,7 @@ This step enables the Enable-WSManCredSSP on the local machine.
 
 ```Enable-WSManCredSSP -Role Client -DelegateComputer *.ocean.net -Force```
 
-This next step enables use of the delgated credentials on the remote target servers where we want to install the Centrify agent.
+This next step enables use of the delegated credentials on the remote target servers where we want to install the Centrify agent.
 
 ```Invoke-Command -ComputerName $computers -ScriptBlock {Enable-WSManCredSSP -role server -Force} -Credential $credential```
 
