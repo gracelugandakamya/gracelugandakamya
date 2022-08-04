@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Grace
-subtitle: Support Engineer
+subtitle: IT Systems Engineer
 ---
 
 I am currently a Systems Engineer for Ultradent, this blog is more to document some of the technologies I am learning and technologies I am passionate about. I enjoy learning, and this blog will be used as a journal for my learning.
