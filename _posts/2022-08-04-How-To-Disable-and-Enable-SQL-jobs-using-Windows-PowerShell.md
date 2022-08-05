@@ -8,6 +8,8 @@ title: How to disable and enable SQL jobs using Windows PowerShell.
 Usually to disable or enable SQL jobs, I would open the Microsoft SQL Server Management Studio console, navigate to SQL Server Agent>Job Activity Monitor[double click it] to get a display of the jobs, proceed to select the jobs I want to disable/enable and right click and select "Disable job". That can be time consuming, so here are 2 PowerShell scripts that I use to enable and disable SQL jobs without ever opening the Microsoft SQL Server Management Studio console.
 
 The zipped folder conatining all the scripts used in this artcile is [here](https://github.com/gracelugandakamya/this-worked-for-me/blob/main/enable-disable-sql-jobs.zip)
+
+
 **Script to Disable SQL jobs using PowerShell:**
 There are two parts to this script, the first part consists of the actual SQL script that will query for all the sql jobs that have the name "sandbox"
 
