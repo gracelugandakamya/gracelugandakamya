@@ -60,7 +60,7 @@ $ConnectionString = 'Server=SQLSERVER01;Database=msdb;Trusted_Connection=true'
 Invoke-Sqlcmd -ConnectionString $ConnectionString -InputFile "C:\Temp\scripts\disable-enable-sql-jobs\Disable-SQL-Jobs-By-Job-Name.sql" | Export-Csv -Delimiter "," -Path "C:\Users\johndoe\Downloads\results.csv"
 Import-Csv "C:\Users\johndoe\Downloads\results.csv" | Format-table
 ```
-![results returned by the above script to disable the SQL jobs](/assets/img/disable-sql-jobs.png width="300" height="300" disable sql jobs image")
+![results returned by the above script to disable the SQL jobs](/assets/img/disable-sql-jobs.png disable sql jobs image")
 
 **Script to Enable SQL jobs using PowerShell:**
 
