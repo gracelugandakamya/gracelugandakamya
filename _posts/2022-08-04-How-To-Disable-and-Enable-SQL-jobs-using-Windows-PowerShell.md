@@ -7,7 +7,7 @@ title: How to disable and enable SQL jobs using Windows PowerShell.
 **Problem being solved:**
 Usually to disable or enable SQL jobs, I would open the Microsoft SQL Server Management Studio console, navigate to SQL Server Agent>Job Activity Monitor[double click it] to get a display of the jobs, proceed to select the jobs I want to disable/enable and right click and select "Disable job". That can be time consuming, so here are 2 PowerShell scripts that I use to enable and disable SQL jobs without ever opening the Microsoft SQL Server Management Studio console.
 
-The zipped folder conatining all the scripts used in this artcile is [here] (https://github.com/gracelugandakamya/this-worked-for-me/blob/main/enable-disable-sql-jobs.zip)
+The zipped folder conatining all the scripts used in this artcile is [here](https://github.com/gracelugandakamya/this-worked-for-me/blob/main/enable-disable-sql-jobs.zip)
 **Script to Disable SQL jobs using PowerShell:**
 There are two parts to this script, the first part consists of the actual SQL script that will query for all the sql jobs that have the name "sandbox"
 
@@ -58,7 +58,7 @@ $ConnectionString = 'Server=SQLSERVER01;Database=msdb;Trusted_Connection=true'
 Invoke-Sqlcmd -ConnectionString $ConnectionString -InputFile "C:\Temp\scripts\disable-enable-sql-jobs\Disable-SQL-Jobs-By-Job-Name.sql" | Export-Csv -Delimiter "," -Path "C:\Users\johndoe\Downloads\results.csv"
 Import-Csv "C:\Users\johndoe\Downloads\results.csv" | Format-table
 ```
-![The results returned by the above script to disable the SQL jobs](assets/img/disable-sql-jobs.png "disable sql jobs image")
+![results returned by the above script to disable the SQL jobs](/assets/img/disable-sql-jobs.png "disable sql jobs image")
 
 **Script to Enable SQL jobs using PowerShell:**
 
@@ -112,7 +112,7 @@ $ConnectionString = 'Server=SQLSERVER01;Database=msdb;Trusted_Connection=true'
 Invoke-Sqlcmd -ConnectionString $ConnectionString -InputFile "C:\Temp\scripts\disable-enable-sql-jobs\Enable-SQL-Jobs-By-Job-Name.sql" | Export-Csv -Delimiter "," -Path "C:\Users\johndoe\Downloads\results.csv"
 Import-Csv "C:\Users\johndoe\Downloads\results.csv" | Format-table
 ```
-![The results returned by the above script to enable the SQL jobs](assets/img/enable-sql-jobs.png "enable sql jobs image")
+![The results returned by the above script to enable the SQL jobs](/assets/img/enable-sql-jobs.png "enable sql jobs image")
 A few notes:
 - Make sure that all these scripts are in the same location[directory, folder]
 - Make sure to run the PowerShell scripts as Administrator
