@@ -58,7 +58,7 @@ $ConnectionString = 'Server=SQLSERVER01;Database=msdb;Trusted_Connection=true'
 Invoke-Sqlcmd -ConnectionString $ConnectionString -InputFile "C:\Temp\scripts\disable-enable-sql-jobs\Disable-SQL-Jobs-By-Job-Name.sql" | Export-Csv -Delimiter "," -Path "C:\Users\johndoe\Downloads\results.csv"
 Import-Csv "C:\Users\johndoe\Downloads\results.csv" | Format-table
 ```
-![The results returned by the above script to disable the SQL jobs](/assets/disable-sql-jobs.png "disable sql jobs image")
+![The results returned by the above script to disable the SQL jobs](assets/img/disable-sql-jobs.png "disable sql jobs image")
 
 **Script to Enable SQL jobs using PowerShell:**
 
@@ -112,7 +112,7 @@ $ConnectionString = 'Server=SQLSERVER01;Database=msdb;Trusted_Connection=true'
 Invoke-Sqlcmd -ConnectionString $ConnectionString -InputFile "C:\Temp\scripts\disable-enable-sql-jobs\Enable-SQL-Jobs-By-Job-Name.sql" | Export-Csv -Delimiter "," -Path "C:\Users\johndoe\Downloads\results.csv"
 Import-Csv "C:\Users\johndoe\Downloads\results.csv" | Format-table
 ```
-![The results returned by the above script to enable the SQL jobs](/assets/enable-sql-jobs.png "enable sql jobs image")
+![The results returned by the above script to enable the SQL jobs](assets/img/enable-sql-jobs.png "enable sql jobs image")
 A few notes:
 - Make sure that all these scripts are in the same location[directory, folder]
 - Make sure to run the PowerShell scripts as Administrator
